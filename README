@@ -1,0 +1,15 @@
+Language: Python 3.7.7 64-bit
+	IDE: Visual Studio Code
+	Initial testing environment: Command line shell
+	
+
+	How to run this program:
+	1. Open two command line windows
+	2. On the first terminal window, run './server.sh <req_code> 'sent.txt'
+	    - <req_code> is the server's intended request code for client communication; positive integer
+	3. On the second terminal window, run './client.sh <server_address> <n_port> <mode> <req_code> 'received.txt'
+	    - <server_address> is the address of the server; string
+	    - <n_port> is the initial fixed port for TCP connection; positive integer
+      - <mode>can either be 'P' or 'A'
+      - <req_code> is the very light authentication used to verify TCP connection between client and server; positive interger
+	    - <file_received> is the name under which the client will save the file downloaded from the server.
